@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.betel.travelguide.ShoopingAddress"
+      android:background="#398ae5" >
+
+     <ImageView
+         android:id="@+id/fullImageViewShop"
+         android:layout_width="fill_parent"
+         android:layout_height="260dp"
+         android:background="#000000" />
+
+    <TextView
+        android:id="@+id/txtViewShopDescriptionLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullImageViewShop"
+        android:layout_marginTop="28dp"
+        android:textStyle="bold"
+         android:textColor="#FFFFFF"
+        android:text="@string/description_label"/>
+         
+    <TextView
+        android:id="@+id/txtViewShopDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewShopDescriptionLabel"
+          android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtViewShopAdressLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewShopDescription"
+        android:layout_marginTop="28dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="@string/address_label"/>
+        
+    <TextView
+        android:id="@+id/txtViewShopAdress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewShopAdressLabel"
+         android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtViewShopAdress"
+        android:background="#F3FAF1"
+        android:text="View Map"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btnmapp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btnmap"
+        android:layout_alignLeft="@+id/txtViewShopAdress"
+        android:src="@drawable/map" />
+    
+</RelativeLayout>

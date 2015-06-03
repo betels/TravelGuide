@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.betel.travelguide.Admin" >
+
+     <Button
+         android:id="@+id/btndb"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnview"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="62dp"
+         android:text="@string/link" />
+
+     <Button
+         android:id="@+id/btnview"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="59dp"
+         android:text="@string/btn_view" />
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="40dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/btnview"
+         android:layout_alignTop="@+id/btnview"
+         android:layout_marginLeft="18dp"
+         android:src="@drawable/db" />
+
+     <Button
+         android:id="@+id/btnh"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btndb"
+         android:layout_below="@+id/btndb"
+         android:text="Add Hotel Detail " />
+
+     <Button
+         android:id="@+id/btnt"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnh"
+         android:layout_below="@+id/btnh"
+         android:text=" Add Taxi Detail " />
+
+     <Button
+         android:id="@+id/btns"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnt"
+         android:layout_below="@+id/btnt"
+         android:text="Add Shopping Mall Detail " />
+
+</RelativeLayout>

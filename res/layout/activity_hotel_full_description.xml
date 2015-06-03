@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.betel.travelguide.HotelFullDescription" 
+     android:background="#398ae5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:id="@+id/txtViewHotelAddress"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"  />
+    
+    <ImageView
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:id="@+id/fullImageView" />
+
+    <Button
+        android:id="@+id/btnclose"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtViewHotelAddress"
+        android:text="@string/closestbtn" 
+         android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <VideoView
+        android:id="@+id/hotelVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

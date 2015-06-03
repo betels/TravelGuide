@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.betel.travelguide.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:text="@string/title"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnhotel"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewtaxi"
+        android:layout_alignRight="@+id/btnrestaurants"
+        android:layout_below="@+id/imageViewrestaurant"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#80F3FAF1"
+        android:text="@string/btnhotel"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btntaxi"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnrestaurants"
+        android:layout_alignRight="@+id/btnhotel"
+        android:layout_below="@+id/btnhotel"
+        android:layout_marginBottom="10dp"
+        android:background="#80F3FAF1"
+        android:text="@string/btn_taxi"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnshooping"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btntaxi"
+        android:layout_alignRight="@+id/btntaxi"
+        android:layout_below="@+id/btntaxi"
+        android:layout_marginBottom="10dp"
+        android:background="#80F3FAF1"
+        android:text="@string/btn_shooping"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewshooping"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btnshooping"
+        android:layout_alignLeft="@+id/imageViewtaxi"
+        android:layout_alignRight="@+id/imageViewtaxi"
+        android:src="@drawable/shoping" />
+
+    <ImageView
+        android:id="@+id/imageViewtaxi"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/btntaxi"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnhotel"
+        android:src="@drawable/taxiicon" />
+
+    <Button
+        android:id="@+id/btnrestaurants"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnrestaurants"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#80F3FAF1"
+        android:text="@string/btn_restaurant"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewrestaurant"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btnrestaurants"
+        android:layout_alignLeft="@id/btnrestaurants"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/restaurant" />
+
+    <ImageView
+        android:id="@+id/imageViewhotel"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btnhotel"
+        android:layout_alignLeft="@+id/imageViewtaxi"
+        android:src="@drawable/h" />
+
+    <ImageButton
+        android:id="@+id/btnadmin"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnshooping"
+        android:src="@drawable/a" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.betel.travelguide.RestaurantFullDescription"
+    android:background="#398ae5" >
+
+    <TextView
+        android:id="@+id/txtViewRestaurantAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <VideoView
+        android:id="@+id/restaurantVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/fullImageView"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/fullImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/txtViewRestaurantAddress"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fullImageView"
+        android:layout_below="@+id/txtViewRestaurantAddress"
+        android:layout_marginTop="58dp"
+        android:background="#F3FAF1"
+        android:text="View Map"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btnmapp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/fullImageView"
+        android:layout_alignTop="@+id/btnmap"
+        android:src="@drawable/map" />
+
+    <ImageButton
+        android:id="@+id/url"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fullImageView"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/u" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/url"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/url"
+        android:text="Find More services here"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
